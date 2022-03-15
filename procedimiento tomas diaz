@@ -1,4 +1,3 @@
-# JuegoGrupo4
 void Menu(){
   // Este procedimiento solicita ingresar un 0 o un 1 para empezar a jugar. Dependiendo de lo ingresado imprime mensaje distintos.
   
