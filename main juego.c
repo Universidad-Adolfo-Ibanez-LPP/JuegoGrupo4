@@ -1,19 +1,3 @@
-void victoria(){
-  // Procedimiento que es llamado cuando se gana el juego. Imprime un mensaje de felicitaciones.
-  printf("Felicidades!!!\n\n");
-  printf("Haz ganado el juego, no ganaste nada, solo te mantienes con vida.\n");
-  printf("Para más información escribir a @grupo4");
-}
-
-void bienvenida(char nombre[]) {
-  // Procedimiento que solicita el nombre del jugador. Luego se imprime un mensaje de bienvenida junto con las instrucciones, mencionando al nombre del jugador.
-  printf("Saludos %s\n\n", nombre);
-  printf("---------- Bienvenido al juego del PESCAO ----------\n");
-  printf("EL PUENTE:\n\n");
-  printf("Aquí deberás elegir 0 (izquierda) o 1 (derecha), que será el lugar del puente hacia donde caminarás. Tú eres el 0. Pero cuidado, que si eliges mal MORIRÁS\n\n");
-  
-}
-
 void Menu(){
   // Este procedimiento solicita ingresar un 0 o un 1 para empezar a jugar. Dependiendo de lo ingresado imprime mensaje distintos.
   
@@ -29,6 +13,26 @@ void Menu(){
     printf("Nadie se zafa de este juego.\n\n");
   }
 }
+//------------------------------------------
+
+void victoria(){
+  // Procedimiento que es llamado cuando se gana el juego. Imprime un mensaje de felicitaciones.
+  printf("Felicidades!!!\n\n");
+  printf("Haz ganado el juego, no ganaste nada, solo te mantienes con vida.\n");
+  printf("Para más información escribir a @grupo4");
+}
+//------------------------------------------
+
+void bienvenida(char nombre[]) {
+  // Procedimiento que solicita el nombre del jugador. Luego se imprime un mensaje de bienvenida junto con las instrucciones, mencionando al nombre del jugador.
+  printf("Saludos %s\n\n", nombre);
+  printf("---------- Bienvenido al juego del PESCAO ----------\n");
+  printf("EL PUENTE:\n\n");
+  printf("Aquí deberás elegir 0 (izquierda) o 1 (derecha), que será el lugar del puente hacia donde caminarás. Tú eres el 0. Pero cuidado, que si eliges mal MORIRÁS\n\n");
+  
+}
+
+//------------------------------------------
 
 void puente(int intento, int lado)
 {
@@ -68,6 +72,8 @@ void puente(int intento, int lado)
   printf("\n");
 }
 
+//------------------------------------------
+
 int random1()
 {
   // Función que devuelve de manera aleatoria un número entero entre 0 y 1.
@@ -75,6 +81,8 @@ int random1()
   numero = random() % 2;
   return numero;
 }
+
+//------------------------------------------
 
 void ganador(int respuesta, int numero){
   // Procedimiento que solicita 2 números, uno es la respuesta del jugador (derecha o izquierda) y la otra es el número aleatorio de la función anterior. Compara los números y dependiendo si son iguales o no, imprime un mensaje especifico.
@@ -85,6 +93,8 @@ void ganador(int respuesta, int numero){
     printf("Mala elección, HAS MUERTO.");
   }
 }
+
+//------------------------------------------
 
 int main() {
 
