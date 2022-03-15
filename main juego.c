@@ -1,3 +1,10 @@
+void victoria(){
+  // Procedimiento que es llamado cuando se gana el juego. Imprime un mensaje de felicitaciones.
+  printf("Felicidades!!!\n\n");
+  printf("Haz ganado el juego, no ganaste nada, solo te mantienes con vida.\n");
+  printf("Para más información escribir a @grupo4");
+}
+
 void bienvenida(char nombre[]) {
   // Procedimiento que solicita el nombre del jugador. Luego se imprime un mensaje de bienvenida junto con las instrucciones, mencionando al nombre del jugador.
   printf("Saludos %s\n\n", nombre);
